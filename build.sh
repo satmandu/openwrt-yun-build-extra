@@ -112,6 +112,6 @@ if [ -n "`fgrep 'OpenWrt Configuration' Config.in`" ]; then
 fi
 
 #make oldconfig
-#make defconfig
+make defconfig
 #make menuconfig
 make
