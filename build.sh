@@ -77,20 +77,20 @@ rm -f ./package/feeds/packages/node
 rm -f ./package/feeds/packages/node-*
 
 #INSTALL CUSTOM NODE PACKAGES
-./scripts/feeds install -a -p node
+#./scripts/feeds install -a -p node
 
 #DELETE OPENWRT MRAA PACKAGES
 rm -f ./package/feeds/packages/libmraa
 rm -f ./package/feeds/packages/libupm
 
 #INSTALL CUSTOM MRAA PACKAGES
-./scripts/feeds install -a -p inteliot
+#./scripts/feeds install -a -p inteliot
 
 #DELETE OPENWRT PAHO-MQTT PACKAGE
 rm -f ./package/feeds/packages/python-paho-mqtt
 
 #INSTALL CUSTOM PACKAGES
-./scripts/feeds install -a -p custom
+#./scripts/feeds install -a -p custom
 
 # PATCH PACKAGES
 #cp ./patches/0001-Added-linuxspi-programmer-type-using-spidev.patch ./feeds/packages/utils/avrdude/patches/
@@ -112,5 +112,6 @@ if [ -n "`fgrep 'OpenWrt Configuration' Config.in`" ]; then
 fi
 
 #make oldconfig
-make defconfig
+#make defconfig
+make menuconfig
 make
