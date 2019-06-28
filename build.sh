@@ -33,7 +33,7 @@ fi
 
 #INIT KERNEL CONFIG
 if [ ! -e '.config' ]; then
-  cp openwrt-yun-test.config .config
+  cp openwrt-yun-lininoos.config .config
   cp .config ./backups/config.${BUILD_DATE}-$$
 fi
 
