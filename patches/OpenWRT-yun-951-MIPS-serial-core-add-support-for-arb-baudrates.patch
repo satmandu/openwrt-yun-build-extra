@@ -1,6 +1,6 @@
-diff -ruN a/target/linux/patches-4.14/951-MIPS-serial-core-add-support-for-arb-baudrates.patch b/target/linux/patches-4.14/951-MIPS-serial-core-add-support-for-arb-baudrates.patch
---- a/target/linux/patches-4.14/951-MIPS-serial-core-add-support-for-arb-baudrates.patch	1969-12-31 19:00:00.000000000 -0500
-+++ b/target/linux/patches-4.14/951-MIPS-serial-core-add-support-for-arb-baudrates.patch	2019-06-28 15:45:51.892863510 -0400
+diff -ruN a/target/linux/ar71xx/patches-4.14/951-MIPS-serial-core-add-support-for-arb-baudrates.patch b/target/linux/ar71xx/patches-4.14/951-MIPS-serial-core-add-support-for-arb-baudrates.patch
+--- a/target/linux/ar71xx/patches-4.14/951-MIPS-serial-core-add-support-for-arb-baudrates.patch	1969-12-31 19:00:00.000000000 -0500
++++ b/target/linux/ar71xx/patches-4.14/951-MIPS-serial-core-add-support-for-arb-baudrates.patch	2019-06-28 15:45:51.892863510 -0400
 @@ -0,0 +1,54 @@
 +--- a/drivers/tty/serial/serial_core.c
 ++++ b/drivers/tty/serial/serial_core.c
