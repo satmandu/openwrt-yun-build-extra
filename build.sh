@@ -93,9 +93,9 @@ rm -f ./package/feeds/packages/python-paho-mqtt
 #./scripts/feeds install -a -p custom
 
 # PATCH PACKAGES
-#cp ./patches/0001-Added-linuxspi-programmer-type-using-spidev.patch ./feeds/packages/utils/avrdude/patches/
+cp ./patches/0001-Added-linuxspi-programmer-type-using-spidev.patch ./feeds/packages/utils/avrdude/patches/
 
-#cp ./patches/951-MIPS-serial-core-add-support-for-arb-baudrates.patch /target/linux/ar71xx/patches-4.14/
+cp ./patches/951-MIPS-serial-core-add-support-for-arb-baudrates.patch ./target/linux/ar71xx/patches-4.14/
 
 # BACKUP FEEDS CONFIG
 if [ -e '.config' ]; then
@@ -104,7 +104,6 @@ fi
 
 # PATCH KERNEL CONFIG & COPY CONFIG FILE
 if [ -n "`fgrep 'OpenWrt Configuration' Config.in`" ]; then
- patch -p1 < ./patches/OpenWRT-yun-951-MIPS-serial-core-add-support-for-arb-baudrates.patch
   if [ -z "`git status|fgrep ar71xx/config-`" ]; then
       patch -p1 < ./patches/OpenWrt-MIPS24Kc+PCI+FPU_EMU.patch
   fi
