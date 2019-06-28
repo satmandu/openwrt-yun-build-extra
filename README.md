@@ -65,7 +65,7 @@ See:
 mkdir Build_Path_Some_Where
 cd Build_Path_Some_Where
 git clone https://github.com/openwrt/openwrt.git
-git clone --depth=1 --branch master --single-branch https://github.com/nxhack/openwrt-yun-build-extra.git
+git clone --depth=1 --branch master --single-branch https://github.com/satmandu/openwrt-yun-build-extra.git
 cd openwrt
 ln -s ../openwrt-yun-build-extra/* .
 ./build.sh
