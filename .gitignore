@@ -7,3 +7,4 @@
 .emacs.desktop*
 TAGS*~
 git-src
+.DS_Store

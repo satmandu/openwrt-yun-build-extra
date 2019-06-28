@@ -95,6 +95,8 @@ rm -f ./package/feeds/packages/python-paho-mqtt
 # PATCH PACKAGES
 #cp ./patches/0001-Added-linuxspi-programmer-type-using-spidev.patch ./feeds/packages/utils/avrdude/patches/
 
+cp ./patches/951-MIPS-serial-core-add-support-for-arb-baudrates.patch /target/linux/ar71xx/patches-4.14/
+
 # BACKUP FEEDS CONFIG
 if [ -e '.config' ]; then
     mv .config ./backups/feeds-config.${BUILD_DATE}-$$
