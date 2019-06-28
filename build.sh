@@ -104,6 +104,7 @@ fi
 
 # PATCH KERNEL CONFIG & COPY CONFIG FILE
 if [ -n "`fgrep 'OpenWrt Configuration' Config.in`" ]; then
+ patch -p1 < ./patches/OpenWRT-yun-951-MIPS-serial-core-add-support-for-arb-baudrates.patch
   if [ -z "`git status|fgrep ar71xx/config-`" ]; then
       patch -p1 < ./patches/OpenWrt-MIPS24Kc+PCI+FPU_EMU.patch
   fi
