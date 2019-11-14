@@ -24,8 +24,7 @@ rm -f ./package/feeds/packages/python-paho-mqtt
 #INSTALL CUSTOM PACKAGES
 #./scripts/feeds install -a -p custom
 
-cp openwrt-yun-lininoos.diffconfig .config
-export PATH="/usr/lib/ccache:$PATH"
-export CONFIG_CCACHE=y
+cp openwrt-yun-19.07.diffconfig .config
+
 make defconfig
 make
