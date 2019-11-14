@@ -1,25 +1,24 @@
-# OpenWrt/LEDE for Arduino Yún (+LininoOS)
+# OpenWrt for Arduino Yún
 
 ## Description
 
-OpenWrt/LEDE for Arduino Yún : trunk (Bleeding Edge / Reboot)
+OpenWrt for Arduino Yún : 19.07 (Bleeding Edge / Reboot)
 
-Extra files and scripts for building OpenWrt-Yun (+LininoOS).
+Extra files and scripts for building OpenWrt-Yun.
 
 ```
-BusyBox v1.25.1 () built-in shell (ash)
+BusyBox v1.30.1 () built-in shell (ash)
+Enter 'help' for a list of built-in commands.
 
-     _________
-    /        /\      _    ___ ___  ___
-   /  LE    /  \    | |  | __|   \| __|
-  /    DE  /    \   | |__| _|| |) | _|
- /________/  LE  \  |____|___|___/|___|                      lede-project.org
- \        \   DE /
-  \    LE  \    /  -----------------------------------------------------------
-   \  DE    \  /    Reboot (17.01-SNAPSHOT, r3401-e02b12c)
-    \________\/    -----------------------------------------------------------
-
-root@Arduino:~# cat /proc/cpuinfo
+  _______                     ________        __
+ |       |.-----.-----.-----.|  |  |  |.----.|  |_
+ |   -   ||  _  |  -__|     ||  |  |  ||   _||   _|
+ |_______||   __|_____|__|__||________||__|  |____|
+          |__| W I R E L E S S   F R E E D O M
+ -----------------------------------------------------
+ OpenWrt 19.07-SNAPSHOT, r0-d1fbaa3
+ -----------------------------------------------------
+root@OpenWrt:~# cat /proc/cpuinfo
 system type             : Atheros AR9330 rev 1
 machine                 : Arduino Yun
 processor               : 0
@@ -32,6 +31,7 @@ extra interrupt vector  : yes
 hardware watchpoint     : yes, count: 4, address/irw mask: [0x0ffc, 0x0ffc, 0x0ffb, 0x0ffb]
 isa                     : mips1 mips2 mips32r1 mips32r2
 ASEs implemented        : mips16
+Options implemented     : tlb 4kex 4k_cache prefetch mcheck ejtag llsc dc_aliases perf_cntr_intr_bit nan_legacy nan_2008 perf
 shadow register sets    : 1
 kscratch registers      : 0
 package                 : 0
@@ -68,6 +68,7 @@ git clone --depth=1 https://github.com/openwrt/openwrt.git
 git clone --depth=1 --branch master --single-branch https://github.com/satmandu/openwrt-yun-build-extra.git
 cd openwrt
 ln -s ../openwrt-yun-build-extra/* .
+./FIRST_SETUP_ubuntu_eoan.sh
 nice -n 20 ./build.sh
 ```
 Please modify /etc/opkg/distfeeds.conf
