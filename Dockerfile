@@ -23,7 +23,7 @@ USER openwrt
 ENV HOME /home/openwrt
 WORKDIR /home/openwrt
 
-RUN git clone https://github.com/openwrt/openwrt.git && \
+RUN git clone -b openwrt-19.07 https://github.com/openwrt/openwrt.git&& \
 git clone --depth=1 --branch master --single-branch https://github.com/satmandu/openwrt-yun-build-extra.git && \
 ln -s /home/openwrt/openwrt-yun-build-extra/* /home/openwrt/openwrt/
 
