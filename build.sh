@@ -41,7 +41,8 @@ fi
 if [ -e 'dl' ]; then
     mv dl dl.orig
 fi
-
+export PATH="/usr/lib/ccache:$PATH"
+export CONFIG_CCACHE=y
 #CLEAN
 make clean
 make dirclean
