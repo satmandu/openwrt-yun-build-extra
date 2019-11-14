@@ -2,7 +2,7 @@
 
 ## Description
 
-OpenWrt for Arduino Yún : 19.07 (Bleeding Edge / Reboot)
+OpenWrt for Arduino Yún : 19.07
 
 Extra files and scripts for building OpenWrt-Yun.
 
