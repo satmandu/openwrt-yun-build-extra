@@ -69,6 +69,8 @@ git clone --depth=1 --branch master --single-branch https://github.com/satmandu/
 cd openwrt
 ln -s ../openwrt-yun-build-extra/* .
 ./FIRST_SETUP_ubuntu_eoan.sh
+export PATH="/usr/lib/ccache:$PATH"
+export CONFIG_CCACHE=y
 nice -n 20 ./build.sh
 ```
 Please modify /etc/opkg/distfeeds.conf
