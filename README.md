@@ -7,7 +7,7 @@ OpenWrt for Arduino Yún : 19.07
 Extra files and scripts for building OpenWrt-Yun.
 
 ```
-BusyBox v1.30.1 () built-in shell (ash)
+BusyBox v1.31.1 () built-in shell (ash)
 Enter 'help' for a list of built-in commands.
 
   _______                     ________        __
@@ -16,9 +16,9 @@ Enter 'help' for a list of built-in commands.
  |_______||   __|_____|__|__||________||__|  |____|
           |__| W I R E L E S S   F R E E D O M
  -----------------------------------------------------
- OpenWrt 19.07-SNAPSHOT, r0-d1fbaa3
+ OpenWrt SNAPSHOT, r0-1c6066a
  -----------------------------------------------------
-root@OpenWrt:~# cat /proc/cpuinfo
+root@OpenWrt:~# cat /proc/cpuinfo 
 system type             : Atheros AR9330 rev 1
 machine                 : Arduino Yun
 processor               : 0
@@ -38,6 +38,9 @@ package                 : 0
 core                    : 0
 VCED exceptions         : not available
 VCEI exceptions         : not available
+
+root@OpenWrt:~# uname -a
+Linux OpenWrt 4.14.152 #0 Thu Nov 14 15:03:33 2019 mips GNU/Linux
 ```
 
 ## License
