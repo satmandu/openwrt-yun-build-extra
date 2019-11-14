@@ -68,7 +68,7 @@ git clone --depth=1 https://github.com/openwrt/openwrt.git
 git clone --depth=1 --branch master --single-branch https://github.com/satmandu/openwrt-yun-build-extra.git
 cd openwrt
 ln -s ../openwrt-yun-build-extra/* .
-./build.sh
+nice -n 20 ./build.sh
 ```
 Please modify /etc/opkg/distfeeds.conf
 
