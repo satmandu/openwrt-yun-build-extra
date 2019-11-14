@@ -108,7 +108,7 @@ if [ -n "`fgrep 'OpenWrt Configuration' Config.in`" ]; then
       patch -p1 < ./patches/OpenWrt-MIPS24Kc+PCI+FPU_EMU.patch
   fi
   #cp openwrt-yun-19.07.config .config
-  cp openwrt-yun-19.07.diffconfig .config
+  cp openwrt-yun-19.07-orig.diffconfig .config
 fi
 
 #make oldconfig
