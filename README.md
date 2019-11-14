@@ -2,7 +2,7 @@
 
 ## Description
 
-OpenWrt for Arduino Yún : 19.07
+OpenWrt for Arduino Yún : 19.07-rc1
 
 Extra files and scripts for building OpenWrt-Yun.
 
