@@ -41,8 +41,7 @@ fi
 if [ -e 'dl' ]; then
     mv dl dl.orig
 fi
-export PATH="/usr/lib/ccache:$PATH"
-export CONFIG_CCACHE=y
+
 #CLEAN
 make clean
 make dirclean
@@ -108,8 +107,8 @@ if [ -n "`fgrep 'OpenWrt Configuration' Config.in`" ]; then
   if [ -z "`git status|fgrep ar71xx/config-`" ]; then
       patch -p1 < ./patches/OpenWrt-MIPS24Kc+PCI+FPU_EMU.patch
   fi
-  #cp openwrt-yun-lininoos.config .config
-  cp openwrt-yun-lininoos.diffconfig .config
+  #cp openwrt-yun-19.07.config .config
+  cp openwrt-yun-19.07.diffconfig .config
 fi
 
 #make oldconfig
